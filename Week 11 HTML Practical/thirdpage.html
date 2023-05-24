@@ -1,0 +1,209 @@
+<html>
+    <title>Task 7 - 9 </title>
+    <body>
+        <h1>Task 7 </h1>
+        <h2>e.g. An active link</h2>
+        <p>"HTML" (2008, December 3). In <em>Wikipedia, the free encyclopedia.</em> 
+            Retrieved December 3, 2008, from
+            <a href="http://en.wikipedia.org/wiki/HTML"> http://en.wikipedia.org/wiki/HTML</a> 
+        </p>
+
+        <h2> e.g. Comment</h2>
+        <p>This will be displayed by the browser</p>
+        <!-- This will not be displayed by the browser -->
+
+        <h2>e.g. Tables</h2>
+        <table>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <!--method 2 -->>
+          <table>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+          </table>
+          <!--method 3 -->>
+          <table>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+          </table>
+        <h1>Task 8 </h1>
+        <table >
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Sales</th>
+                <th>Revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1/1/2020</td>
+                <td>12</td>
+                <td>$900</td>
+              </tr>
+              <tr>
+                <td>2/1/2020</td>
+                <td>15</td>
+                <td>$1200</td>
+              </tr>
+            </tbody>
+            <tfooter>
+              <tr>
+                <td>Totals</td>
+                <td>27</td>
+                <td>$2100</td>
+              </tr>
+            </tfooter>
+          </table>
+          <h1>Task 9 </h1>
+          <!--original version-->>
+            <head></head>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th> 
+            </tr>
+            <thead>
+                <tbody>
+                    <tr>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td>e</td>
+                        <td>f</td>
+                    </tr>
+                </tbody>
+            </thead>
+          <!----Borders-->>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+            </tbody>
+          </table>
+          <!--Cellpadding--->>
+          <table border="1" cellpadding="5">
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+            </tbody>
+          </table>
+          <!-- Cellspacing -->
+
+            <table border="1" cellspacing="5" cellpadding="5">
+                <thead>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                </tbody>
+            </table>
+         <!-- Colspans and Rowspans -->
+            <table border="1" cellspacing="5" cellpadding="5">
+                <thead>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="2">a</td>
+                    <td colspan="2">b</td>
+                    <!-- One cell is missing here, because the cell before it will expand into this column. -->
+                </tr>
+                <tr>
+                    <!-- One cell is missing here, because thE cell above is going to expand into it. -->
+                    <td>e</td>
+                    <td>f</td>
+                </tbody>
+            </table>
+             <!-- Widths -->
+
+            <table border="1" cellspacing="5" cellpadding="5" width="400px">
+                <thead>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- Individual cell widths are being set here. They could be set in any row - the browser will figure it out. -->
+                    <td width="20%">a</td>
+                    <td width="50%">b</td>
+                    <td width="30%">c</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                </tbody>
+            </table>
+                
+    </body>
+</htmL>
+
+
