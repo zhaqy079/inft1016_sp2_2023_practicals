@@ -1,0 +1,126 @@
+:root {
+                    --base-font-color:         rgb(131, 148, 150);
+                    --secondary-font-color:    rgb(88, 110, 117);
+                    --emphasised-font:         rgb(147, 161, 161);
+                    --c-background-color:      rgb(0, 43, 54);
+                    --c-background-highlights: rgb(7, 54, 66);
+                    --c-yellow:                rgb(181, 137, 0);
+                    --c-orange:                rgb(203, 75, 22);
+                    --c-red:                   rgb(220, 50, 47);
+                    --c-magenta:               rgb(211, 54, 130);
+                    --c-violet:                rgb(108, 113, 196);
+                    --c-blue:                  rgb(38, 139, 210);
+                    --c-cyan:                  rgb(42, 161, 152);
+                    --c-green:                 rgb(133, 153, 0);
+                  }
+ 
+
+body {
+ background-color: var(--c-background-color);
+ max-width: 800px; 
+ font-family: Arial, Helvetica, sans-serif;
+}
+                  
+header{
+background-color: var(--c-background-highlights);
+color: var(--base-font-color);
+}
+                  
+main {
+color: var(--base-font-color);
+  }
+
+a {
+   color: var(--c-magenta);
+ }
+                  
+a:hover {
+   color: var(--c-orange); 
+ }
+                  
+                  
+h1 {
+       text-align: center;
+       font-size: 150%;
+       color: var(--c-yellow);
+      }
+h2,h3 {
+         font-weight:bold;           
+}
+section{
+   border: 3px solid var(--c-cyan);
+   padding-top: 50px;
+   padding: 10px;
+}
+          
+nav ul {
+         list-style-type: none;
+         display: flex;
+         justify-content: center;
+         padding: 0;
+}
+                  
+nav li {
+       margin: 0 10px; 
+                  }
+                  
+nav a {
+       text-decoration: none;
+       color: var(--c-violet);
+}
+                  
+nav a:hover {
+        color: var(--c-orange);
+}
+                  
+                  
+aside {
+     color: var(--c-green);
+         }
+                  
+aside a {
+         color: var(--c-red);
+        }
+                  
+aside a:hover {
+         color: var(--c-blue);
+          }
+article h2,
+article h3{
+          padding-top: 50px;               
+}
+
+atricle {
+ display:flex;
+}
+article > section {
+   flex:1;
+}
+
+.related-links {
+  flex-basis: 25%;
+  padding-left:20px;
+
+}
+.main-content{
+     overflow:hidden;
+}
+article {
+      float:left;
+      width:60%
+}
+aside {
+      float:right;
+      width:30%
+}
+
+footer {
+      background-color: var(--c-background-highlights);
+      color: var(--base-font-color);
+      padding:3px;
+      text-align:left;
+      position: sticky;
+      bottom:0;
+                    
+}
+                  
