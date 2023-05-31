@@ -47,7 +47,7 @@ def foo():
 
 Task 8 adding a image 
 ![this is the task 8 image]
-(https://commons.wikimedia.org/wiki/File:Kismet-IMG_6007-black.jpg)
+ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kismet-IMG_6007-black.jpg/800px-Kismet-IMG_6007-black.jpg"/>
 
 Task 9 creating a table 
 | Number  |  Color  |  Size  |
