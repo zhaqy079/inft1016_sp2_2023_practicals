@@ -115,12 +115,20 @@ article h3{
        padding-top: 50px;               
 }
 
-footer {
+.foot {
+      display: flex;
       background-color: var(--c-background-highlights);
+      flex-direction: column;
+      float: left;
       color: var(--base-font-color);
-      padding-bottom:2px;
-      text-align:left;
-      position: bottom;
+      /* padding-bottom:2px; */
+      /* text-align:left; */
+      
                     
+}
+
+/*body{
+      display: flex;
+      flex-direction: column;
 }
                   
