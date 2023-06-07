@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Week 13</title>
+    <!-- <script> tag tells the browser that a JavaScript program is to follow, and  not to display -->
+    <script>
+      counter = 0;
+      //show dynamic user click times//
+      function countClicks() {
+        counter = counter + 1;
+        // second + for the counter variable to create a new line display//
+        var output = "The link was pressed " + counter + " times.";
+        // element we want to change (using the ID) and stores it temporarily in a variable called element.//
+        var element = document.getElementById("boxy");
+        element.innerHTML = output;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Demo</h1>
+    <!-- when trigger JS happen in hyperlink click me part-->
+    <a href="#" onclick="countClicks();">Click me</a>
+    <p id="boxy"></p>
+  </body>
+</html>
