@@ -12,18 +12,15 @@
       <h1><strong>The impact of social media on mobile device</strong></h1>
       <hr />
 
-      <script>
-        var icon = document.getElementById("icon");
-        icon.onclick = function () {
-          document.body.classList.toggle("dark-theme");
-          if (document.body.classList.contains("dark-theme")) {
-            icon.src = "image/light.png";
-          } else {
-            icon.src = "image/moon.png";
-          }
-        };
-      </script>
-      <button onclick="">Toggle Theme</button>
+      <button
+        class="theme-toggle"
+        role="switch"
+        aria-label="light/dark mode"
+        onclick=""
+      >
+        Toggle Theme
+      </button>
+      <div id="currentDateTime"></div>
     </header>
     <nav>
       <ul>
@@ -32,7 +29,6 @@
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <img src="image/moon.png" id="icon" />
 
       <form>
         <input type="text" name="user_name" placeholder="Enter your name" />
@@ -43,11 +39,14 @@
       <article>
         <h2>image details</h2>
         <img src="image/world.png" width="560px" />
+        <h3>Shaping the Course of Technological Advancement</h3>
         <p></p>
-        <h3>Subsection</h3>
-        <p>paragragh 1</p>
-        <p>paragragh 2</p>
-        <h3>sub-subsection</h3>
+        <h3>Transforming Mobile Device Developers through Social Media</h3>
+        <p></p>
+        <h3>Social Media's Influence on Mobile Device Users</h3>
+        <p></p>
+
+        <h3>conclusion</h3>
         <p>paragragh 3</p>
       </article>
       <aside>
@@ -62,5 +61,6 @@
       </aside>
     </main>
     <footer><p>©Copyright 2050 by nobody. All rights reversed.</p></footer>
+    <script src="main.js"></script>
   </body>
 </html>

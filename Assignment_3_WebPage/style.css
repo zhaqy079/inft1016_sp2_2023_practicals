@@ -1,79 +1,79 @@
-
+/* colors  */
 :root 
 {
-                    --base-font-color:         #00171F;     
-                    --secondary-font-color:    #222A68;
-                    --emphasised-font:         #654597;
-                    --c-background-color:      #ffffff;
-                    --c-dark-color:            #072833; 
-                    --c-orange:                rgb(203, 75, 22);
-                    --c-red:                   rgb(220, 50, 47);
-                    --c-magenta:               rgb(211, 54, 130);
-                    --c-violet:                rgb(108, 113, 196);
-                    --c-blue:                  rgb(38, 139, 210);
-                    --c-cyan:                  rgb(42, 161, 152);
-                    --c-green:                 rgb(133, 153, 0);
-                           }
-      .dark-theme{
-            --c-background-color:      #ffffff;
-            --c-dark-color:            #072833; 
-      }
+          --primary-color:         #00171F;     
+          --secondary-color:    #222A68;
+          --bg-color:      #ffffff;
+          --font-color:            #072833; 
+          --heading-color:    rgb(48, 108, 133);
 
-         
+          --bg-color-dark:rgb(29, 26, 26);
+          --text-dark: hsl(215, 43%, 87%);
+          --text-light: hsl(255, 36%, 17%);
+
+                           }
+       /* style for dark mode */
+      [data-scheme="dark"]{
+            --backgroud-color:var(--bg-color-dark);
+            --text:var(var(--text-dark))
+           
+          }
+          
+      [data-scheme="light"] {
+            --background-color:var(--bg-color) ;
+            --text:var(var(var(--text-light)))
+          }
+
+
+          /* styling setting */
+          .theme-toggle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+          }
+          
+          .theme-toggle:is(:hover, :focus){
+            opacity: .8;
+          }
+          #currentDateTime{
+            font-size:15px;
+            color:var(--primary-color);
+            display: grid;
+            place-items: center;
+          }
+
          body {
-          background-color: var(--c-background-color);
-          height:100%;
+          background-color: var(--bg-color);
+          color:var(--bg-color-dark);
           margin: 0;
-          max-width: 800px; 
           font-family: monospace;
+          place-items: center;
+          place-content: center;
+          grid-gap:2em;
          }
       #icon{
             display: flex;
             width:30px;
             cursor: pointer;
       }                  
-         header{
-         background-color: var(--c-background-color);
-         color: var(---c-dark-color);
-         }
+        
                            
-         main {
-           flex:1;
-         color: var(--c-dark-color);
-           }
-         
-         a {
-            color: var(--c-magenta);
-          }
+                  
                            
-         a:hover {
-            color: var(--c-orange); 
-          }
-                           
-                           
-         h1 {
-                text-align: center;
-                font-size: 150%;
-                color: var(--c-dark-color);
-               }
-         h2,h3 {
-                  font-weight:bold;           
-         }
-         section{
-            border: 3px solid var(--c-cyan);
-            padding-top: 50px;
-            padding: 10px;
-         }
+    
                    
          nav ul {
-                  color: var(--c-dark-color);
+                  color: var(--bg-color-dark);
                   display: flex;
                   justify-content: center;
                   padding: 0;
          }
                            
          nav li {
-                color: var(--c-dark-color);
+                color: var(--bg-color-dark);
                 margin: 0 20px; 
                            }
                            
@@ -109,18 +109,7 @@
                float:right;
                width:30%
          }
-                           
-         aside {
-           color: var(--c-green);
-               }
-                        
-         aside a {
-               color: var(--secondary-font-color);
-              }
-                        
-         aside a:hover {
-               color: var(--c-blue);
-                }
+    
          article h2,
          article h3{
                 padding-top: 50px;               
@@ -128,10 +117,10 @@
          
          .foot {
                display: flex;
-               background-color: var(--c-background-highlights);
+               background-color: var(--bg-color);
                flex-direction: column;
                float: left;
-               color: var(--c-dark-color);
+               color: var(--bg-color-dark);
                
                
                              
