@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Gallery</title>
+    <style>
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="default-image.jpg" alt="Default Image" />
+
+      <p>Default Image Text</p>
+    </div>
+
+    <div>
+      <button
+        onclick="changeImage('Japanese Garden Tree', 'https://openverse.org/image/e2049614-f186-4d07-819a-c96028b0d007?q=trees')"
+      >
+        Japanese Garden Tree
+      </button>
+      <button
+        onclick="changeImage('Ceiba Tree', 'https://openverse.org/image/bc3938ee-5cdd-48f5-a808-a8d441904bd3?q=trees')"
+      >
+        Ceiba Tree
+      </button>
+      <button
+        onclick="changeImage('Ancient Olive Trees', 'https://openverse.org/image/f1230075-5ab6-45c3-a027-87bf0874a714?q=trees')"
+      >
+        Ancient Olive Trees
+      </button>
+      <button
+        onclick="changeImage('Palm tree', 'https://openverse.org/image/b7313e95-498b-4917-9a2b-7fd50f072bfe?q=trees')"
+      >
+        Palm tree
+      </button>
+      <button
+        onclick="changeImage('Mangroves', 'https://openverse.org/image/752085e7-81bb-473c-a0fc-2f19fa977345?q=mangrove')"
+      >
+        Mangroves
+      </button>
+    </div>
+
+    <script>
+      function changeImage(text, imageUrl) {
+        const imgElement = document.querySelector("img");
+        const pElement = document.querySelector("p");
+
+        imgElement.src = imageUrl;
+        pElement.textContent = text;
+      }
+    </script>
+  </body>
+</html>

@@ -55,3 +55,12 @@ updateDateTime();
 
 // Update the date and time every second 
 setInterval(updateDateTime, 1000);
+
+// Function to change the image and text
+function changeImage(text, imageUrl) {
+                    const imgElement = document.getElementById('impact-image');
+                    const pElement = document.getElementById('image-text');
+                  
+                    imgElement.src = imageUrl;
+                    pElement.textContent = text;
+                  }

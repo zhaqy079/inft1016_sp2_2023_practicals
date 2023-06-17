@@ -114,6 +114,13 @@
          article h3{
                 padding-top: 50px;               
          }
+
+         .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+          }
          
          .foot {
                display: flex;
