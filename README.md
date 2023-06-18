@@ -21,7 +21,7 @@
 |part 5   | Assignment details    | Body paragraph show theme          |
 |part 6   | details display       | Finish demands then adding details |
 
-# AcAcknowledgements
+# Acknowledgements
 + youtuber:The Net Ninja
 + github: https://github.com/coding-in-public
 # Personal details

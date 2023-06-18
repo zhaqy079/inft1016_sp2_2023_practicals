@@ -6,23 +6,23 @@
           --bg-color:      #ffffff;
           --font-color:            #072833; 
           --heading-color:    rgb(48, 108, 133);
-
+          --c-orange:orange;
           --bg-color-dark:rgb(29, 26, 26);
           --text-dark: hsl(215, 43%, 87%);
           --text-light: hsl(255, 36%, 17%);
 
                            }
        /* style for dark mode */
-      [data-scheme="dark"]{
-            --backgroud-color:var(--bg-color-dark);
-            --text:var(var(--text-dark))
-           
-          }
-          
+       [data-scheme="dark"] {
+        --background-color: var(--bg-color-dark);
+        --text: var(--text-dark);
+      }
+      
       [data-scheme="light"] {
-            --background-color:var(--bg-color) ;
-            --text:var(var(var(--text-light)))
-          }
+        --background-color: var(--bg-color);
+        --text: var(--text-light);
+      }
+      
 
 
           /* styling setting */
@@ -33,6 +33,10 @@
             cursor: pointer;
             display: grid;
             place-items: center;
+            position: fixed; /* Add this line to position the button */
+            top: 100px; 
+            right: 70px; 
+            z-index: 9999; 
           }
           
           .theme-toggle:is(:hover, :focus){
@@ -44,15 +48,20 @@
             display: grid;
             place-items: center;
           }
+          
+          
 
          body {
           background-color: var(--bg-color);
           color:var(--bg-color-dark);
-          margin: 0;
+          margin: 200;
+          padding-top:100px;
+          display:flex;
+          justify-content: center;
+          align-items:center;
           font-family: monospace;
-          place-items: center;
-          place-content: center;
-          grid-gap:2em;
+          font-size:16px;
+         
          }
       #icon{
             display: flex;
@@ -60,31 +69,58 @@
             cursor: pointer;
       }                  
         
-                           
+      nav {
+        background-color: var(--bg-color);
+        color: var(--bg-color-dark);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        z-index: 9999;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+      }
+      
+      nav li {
+        margin: 0 20px;
+      }
+      
+      nav a {
+        text-decoration: none;
+        color: var(--heading-color);
+      }
+      
+      nav a:hover {
+        color: var(--c-orange);
+      }
                   
-                           
+      header h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color:var(--heading-color);
+      }
+      
+      header h2 {
+        font-size: 14px;
+        font-weight: bold;
+        color:var(--heading-color);
+      }
+      
+      p {
+        font-size: 14px; 
+      }                  
     
                    
-         nav ul {
-                  color: var(--bg-color-dark);
-                  display: flex;
-                  justify-content: center;
-                  padding: 0;
-         }
-                           
-         nav li {
-                color: var(--bg-color-dark);
-                margin: 0 20px; 
-                           }
-                           
-         nav a {
-                text-decoration: none;
-                color: var(--c-violet);
-         }
-                           
-         nav a:hover {
-                 color: var(--c-orange);
-         }
+              
+        
                            
          atricle {
           display:flex;
@@ -112,6 +148,8 @@
     
          article h2,
          article h3{
+          color:var(--heading-color);
+
                 padding-top: 50px;               
          }
 
@@ -121,12 +159,17 @@
             align-items: center;
             margin-bottom: 20px;
           }
+          .image-container img {
+            width: 900px; /* Set the desired width */
+            height: 600px; /* Set the desired height */
+            object-fit: cover; /* Ensure the image fills the container while maintaining its aspect ratio */
+          }
          
          .foot {
                display: flex;
                background-color: var(--bg-color);
                flex-direction: column;
-               float: left;
+               float: bottom;
                color: var(--bg-color-dark);
                
                
