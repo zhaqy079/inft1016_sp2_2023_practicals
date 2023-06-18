@@ -2,14 +2,14 @@
 
 
 <p align="center">
-  <img src="https://www.freepik.com/free-photo/are-you-sure-warning-warning_17132837.htm#query=online%20jnp&position=0&from_view=search&track=ais.jpg" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Social_media_platforms.jpg" width="350" title="hover text">
+  <img src="Assignment_3_WebPage" width="350" alt="Assignment_3_WebPage">
 </p>
 
 # Project Description
-*** People can use their mobile devices to share opinions, insights, experiences and perspectives on social media, so as long as social media can interact with mobile devices, it will have an impact. Given the link between mobile devices and social media, what kind of impact will exist between in social media and mobile devices?  ***
+***People can use their mobile devices to share opinions, insights, experiences and perspectives on social media, so as long as social media can interact with mobile devices, it will have an impact. Given the link between mobile devices and social media, what kind of impact will exist between in social media and mobile devices?***
 
-In my Assignment 1 and Assignment 2 I discuss them from three points of view. Firstly,from the influence on technological development,then,I discuss the impact of social media on mobile device developers. Finally,I focus on the impact of social media on mobile device users.I use html,css,and JavaScript to achieve this page to show my views dynamically.
+  In my Assignment 1 and Assignment 2 I discuss them from three points of view. Firstly,from the influence on technological development,then,I discuss the impact of social media on mobile device developers. Finally,I focus on the impact of social media on mobile device users.I use html,css,and JavaScript to achieve this page to show my views dynamically.
 
 # Main section
 | Section | Demand                |  Function                          |
@@ -21,7 +21,7 @@ In my Assignment 1 and Assignment 2 I discuss them from three points of view. Fi
 |part 5   | Assignment details    | Body paragraph show theme          |
 |part 6   | details display       | Finish demands then adding details |
 
-## Personal details
+# Personal details
 + Personal details
  + Name: qianting zhang 
  + StudentIdName: zhaqy079
