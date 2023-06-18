@@ -151,3 +151,7 @@ function storeName() {
     updateHeading();
   }
 }
+// Call the updateHeading() function when the page loads
+window.onload = function() {
+  updateHeading();
+};
