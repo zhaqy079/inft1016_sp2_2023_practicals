@@ -19,14 +19,14 @@
 |part 3   | Switch images         | Show image/text combinations       |
 |part 4   | Theme preference      | Storing data in the page           |
 |part 5   | Assignment details    | Body paragraph show theme          |
-|part 6   | details display       | Finish demands then adding details |
+|part 6   | Details display       | Finish demands then adding details |
 
 # Acknowledgements
 + youtuber:The Net Ninja
 + github: https://github.com/coding-in-public
 # Personal details
 + 
- + Name: qianting zhang 
+ + Name: Qianting Zhang 
  + StudentIdName: zhaqy079
  + StudentID: 110401043
  + Subject:INFT1016-assignment 3 webpage design

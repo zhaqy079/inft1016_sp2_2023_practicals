@@ -1,32 +1,27 @@
 // Toggle for switch light and dark mode
-// Get the HTML element to display the switch toggle
 const themeToggleBtn = document.querySelector('.theme-toggle');
 const body = document.body;
 
-// Store data locally in the user's browser and retrieve it late
+// Store data locally in the user's browser and retrieve it later
 const theme = localStorage.getItem('theme');
-// Specified theme class to be applied to the entire document body when loads page
-const dataScheme = theme === 'dark-mode' ? 'dark' : 'light';
+// Specified theme to be applied to the entire document body when the page loads
+const dataScheme = theme === 'dark' ? 'dark' : 'light';
 
 // Set the initial mode on page load
 body.setAttribute('data-scheme', dataScheme);
 
-// When the button is clicked, it toggles elements store positon change
+// When the button is clicked, it toggles the theme and stores the preference
 function handleThemeToggle() {
-                    body.classList.toggle('dark-mode');
-                    if (body.classList.contains('dark-mode')) {
-                      localStorage.setItem('theme', 'dark-mode');
-                      body.setAttribute('data-scheme', 'dark');
-                    } else {
-                      localStorage.removeItem('theme');
-                      body.setAttribute('data-scheme', 'light');
-                    }
-                  }
-                  
+  const currentScheme = body.getAttribute('data-scheme');
+  const newScheme = currentScheme === 'dark' ? 'light' : 'dark';
+  
+  body.setAttribute('data-scheme', newScheme);
+  localStorage.setItem('theme', newScheme);
+}
 
-
-// Adds an event listener to the themeToggleBtn element
+// Add an event listener to the themeToggleBtn element
 themeToggleBtn.addEventListener('click', handleThemeToggle);
+
 
 
 // Display current date and time when user access webpage
@@ -105,4 +100,54 @@ for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function() {
     changeImage(i);
   });
+}
+
+// Get the input and button elements
+const nameInput = document.getElementById('name-input');
+const nameButton = document.getElementById('name-button');
+const userNameSpan = document.getElementById('user-name');
+const greetingHeading = document.getElementById('greeting-heading');
+
+// Event listener for the button click
+nameButton.addEventListener('click', function() {
+  const userName = nameInput.value;
+  if (userName) {
+    userNameSpan.textContent = userName;
+    greetingHeading.style.display = 'block'; // Show the greeting heading
+  }
+});
+// Function to initialize the theme based on user preference stored in local storage
+function initializeTheme() {
+  const storedTheme = localStorage.getItem('theme');
+  if (storedTheme === 'dark') {
+    document.body.setAttribute('data-scheme', 'dark');
+  } else {
+    document.body.setAttribute('data-scheme', 'light');
+  }
+}
+
+// Function to update the heading with the user's name
+function updateHeading() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const userNameParam = urlParams.get('user_name');
+  const storedName = localStorage.getItem('user_name');
+  const userNameSpan = document.getElementById('user-name');
+
+  if (userNameParam) {
+    localStorage.setItem('user_name', userNameParam);
+    userNameSpan.textContent = userNameParam;
+  } else if (storedName) {
+    userNameSpan.textContent = storedName;
+  }
+}
+
+// Function to store the user's name in local storage
+function storeName() {
+  const nameInput = document.getElementById('name-input');
+  const userName = nameInput.value.trim();
+  if (userName) {
+    localStorage.setItem('user_name', userName);
+    updateHeading();
+  }
 }

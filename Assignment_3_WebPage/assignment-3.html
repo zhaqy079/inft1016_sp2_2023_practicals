@@ -7,7 +7,7 @@
     <link rel="shotcut icon" href="image/title.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="initializeTheme(); updateHeading()">
     <header>
       <!-- dynamic theme toggle -->
       <button
@@ -19,24 +19,28 @@
         Dark &Light
       </button>
     </header>
+    <!-- Setting navgation details -->
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Introduction</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
       <form>
-        <input type="text" name="user_name" placeholder="Enter your name" />
-        <button type="submit">Apply!</button>
+        <div class="user-section">
+          <input type="text" id="name-input" placeholder="Enter your name" />
+          <button id="name-button">Apply!</button>
+        </div>
       </form>
     </nav>
     <main>
       <article>
-        <h1><strong>The impact of social media on mobile device</strong></h1>
-        <h2>image details</h2>
+        <h1 id="greeting-heading">Hello, <span id="user-name"></span></h1>
+        <h2>The Impact of Social Media on Mobile Devices</h2>
         <hr />
+        <!-- Part 1 setting picture button function -->
         <div id="currentDateTime"></div>
         <div class="image-container">
           <img
@@ -79,7 +83,7 @@
             Online Balance
           </button>
         </div>
-
+        <!-- The content related to my assignment 1 and assignment 2 -->
         <h3>Shaping the Course of Technological Advancement</h3>
         <p>
           This period has seen a rapid acceleration in mobile device technology,
@@ -161,7 +165,7 @@
           indulgence.
         </p>
 
-        <h3>conclusion</h3>
+        <h3>Conclusion</h3>
         <p>
           By understanding these impacts, we can gain a deeper understanding of
           how mobile social media has shaped our modern digital landscape and
@@ -187,6 +191,7 @@
         </p>
       </article>
       <aside>
+        <!-- Hyperlink the website  -->
         <h2>Related</h2>
         <ul>
           <li>
@@ -203,7 +208,10 @@
         </ul>
       </aside>
     </main>
-    <footer><p>©Copyright 2050 by zhaqy079. All rights reversed.</p></footer>
-    <script src="main.js"></script>
+    <footer class="foot">
+      <p>©Copyright 2050 by zhaqy079. All rights reversed.</p>
+    </footer>
+    <!-- Include external JavaScript file  -->
+    <script src="main.js" defer></script>
   </body>
 </html>
