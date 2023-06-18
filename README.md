@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Social_media_platforms.jpg" width="500" title="hover text">
-  <link src="Assignment_3_WebPage" alt="Assignment_3_WebPage">
+ 
 </p>
 
 # Project Description
@@ -23,7 +23,7 @@
 
 # AcAcknowledgements
 + youtuber:The Net Ninja
-+ github:<link  scr="https://github.com/coding-in-public"  >
++ github: https://github.com/coding-in-public
 # Personal details
 + 
  + Name: qianting zhang 
