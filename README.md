@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Social_media_platforms.jpg" width="500" title="hover text">
-  <img src="Assignment_3_WebPage" alt="Assignment_3_WebPage">
+  <link src="Assignment_3_WebPage" alt="Assignment_3_WebPage">
 </p>
 
 # Project Description
@@ -21,8 +21,11 @@
 |part 5   | Assignment details    | Body paragraph show theme          |
 |part 6   | details display       | Finish demands then adding details |
 
+# AcAcknowledgements
++ youtuber:The Net Ninja
++ github:<link  scr="https://github.com/coding-in-public"  >
 # Personal details
-+ Personal details
++ 
  + Name: qianting zhang 
  + StudentIdName: zhaqy079
  + StudentID: 110401043
