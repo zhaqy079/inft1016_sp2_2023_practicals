@@ -2,8 +2,8 @@
 
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Social_media_platforms.jpg" width="350" title="hover text">
-  <img src="Assignment_3_WebPage" width="350" alt="Assignment_3_WebPage">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Social_media_platforms.jpg" width="500" title="hover text">
+  <img src="Assignment_3_WebPage" alt="Assignment_3_WebPage">
 </p>
 
 # Project Description
